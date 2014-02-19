@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-from pymongo import MongoClient
+import bson
 
 app = Flask(__name__)
 
