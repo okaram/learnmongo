@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 
-import bson
+import pymongo
 
 app = Flask(__name__)
 
