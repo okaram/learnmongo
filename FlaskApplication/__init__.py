@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-import pymongo
+#import pymongo
 app = Flask(__name__)
 
 @app.route('/')
