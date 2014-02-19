@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
-import pymongo
+from pymongo import MongoClient
+
 app = Flask(__name__)
 
 @app.route('/')
