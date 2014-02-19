@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    text = { 'content': 'Welcome to my learnmongo !' } 
+    client=pymongo.MongoClient("mongodb://okaram:1qaz2wsx@widmore.mongohq.com:10010/okaram")
+    text = { 'content':  client.okaram.test.find_one()['name'] } 
     return render_template("home.html",
         title = 'Welcome',
         text = text)
