@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 
+import bson
 
 app = Flask(__name__)
 
