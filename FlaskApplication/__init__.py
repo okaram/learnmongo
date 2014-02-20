@@ -11,11 +11,11 @@ app = Flask(__name__)
 def home():
     text = { 'content':  client.okaram.test.find_one()['name'] } 
     return render_template("home.html",
-        title = 'Welcome',
+        title = 'Welcome ... . . .',
         text = text)
 
 @app.route('/find')
-def find():
+def foo():
     obj=client.okaram.test.find({'_id':request.args.get('id')});
     dict={'content': obj}
     return render_template("home.html",
