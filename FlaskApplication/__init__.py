@@ -14,7 +14,7 @@ def home():
         title = 'Welcome',
         text = text)
 
-@app.route('/')
+@app.route('/find')
 def find():
     obj=client.okaram.test.find({'_id':request.args.get('id')});
     dict={'content': obj}
